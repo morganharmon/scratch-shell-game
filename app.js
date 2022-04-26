@@ -14,7 +14,7 @@ const button3 = document.getElementById('button3');
 // let state
 let pearls = 0;
 let empties = 0;
-let total = pearls + empties;
+let total = 0;
 
 // set event listeners 
 button1.addEventListener('click', () => {
@@ -22,10 +22,18 @@ button1.addEventListener('click', () => {
     if (winner === 1) {
         alert('You found a pearl!');
         pearls++;
+        document.getElementById('pearlsSpan').textContent = pearls;
+        shell1.classList.add('hidden');
+        pearl1.classList.remove('hidden');
+        let total = pearls + empties;
+        document.getElementById('totalSpan').textContent = total;
 
     } else {
         alert('Better luck next time.');
         empties++;
+        document.getElementById('emptiesSpan').textContent = empties;
+        let total = pearls + empties;
+        document.getElementById('totalSpan').textContent = total;
     }
 });
 
@@ -34,10 +42,18 @@ button2.addEventListener('click', () => {
     if (winner === 2) {
         alert('You found a pearl!');
         pearls++;
+        shell2.classList.add('hidden');
+        pearl2.classList.remove('hidden');
+        document.getElementById('pearlsSpan').textContent = empties;
+        let total = pearls + empties;
+        document.getElementById('totalSpan').textContent = total;
 
     } else {
         alert('Better luck next time.');
         empties++;
+        document.getElementById('emptiesSpan').textContent = empties;
+        let total = pearls + empties;
+        document.getElementById('totalSpan').textContent = total;
     }
 });
 button3.addEventListener('click', () => {
@@ -45,10 +61,18 @@ button3.addEventListener('click', () => {
     if (winner === 3) {
         alert('You found a pearl!');
         pearls++;
+        shell3.classList.add('hidden');
+        pearl3.classList.remove('hidden');
+        document.getElementById('pearlsSpan').textContent = empties;
+        let total = pearls + empties;
+        document.getElementById('totalSpan').textContent = total;
 
     } else {
         alert('Better luck next time.');
         empties++;
+        document.getElementById('emptiesSpan').textContent = empties;
+        let total = pearls + empties;
+        document.getElementById('totalSpan').textContent = total;
     }
 });
   // get user input
