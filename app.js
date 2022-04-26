@@ -19,6 +19,10 @@ let total = 0;
 // set event listeners 
 button1.addEventListener('click', () => {
     const winner = Math.ceil(Math.random() * 3);
+    document.getElementById('button1').classList.toggle('hidden');
+    document.getElementById('button2').classList.toggle('hidden');
+    document.getElementById('button3').classList.toggle('hidden');
+    document.getElementById('resetButton').classList.toggle('hidden');
     if (winner === 1) {
         alert('You found a pearl!');
         pearls++;
@@ -39,12 +43,16 @@ button1.addEventListener('click', () => {
 
 button2.addEventListener('click', () => {
     const winner = Math.ceil(Math.random() * 3);
+    document.getElementById('button1').classList.toggle('hidden');
+    document.getElementById('button2').classList.toggle('hidden');
+    document.getElementById('button3').classList.toggle('hidden');
+    document.getElementById('resetButton').classList.toggle('hidden');
     if (winner === 2) {
         alert('You found a pearl!');
         pearls++;
         shell2.classList.add('hidden');
         pearl2.classList.remove('hidden');
-        document.getElementById('pearlsSpan').textContent = empties;
+        document.getElementById('pearlsSpan').textContent = pearls;
         let total = pearls + empties;
         document.getElementById('totalSpan').textContent = total;
 
@@ -56,14 +64,19 @@ button2.addEventListener('click', () => {
         document.getElementById('totalSpan').textContent = total;
     }
 });
+
 button3.addEventListener('click', () => {
     const winner = Math.ceil(Math.random() * 3);
+    document.getElementById('button1').classList.toggle('hidden');
+    document.getElementById('button2').classList.toggle('hidden');
+    document.getElementById('button3').classList.toggle('hidden');
+    document.getElementById('resetButton').classList.toggle('hidden');
     if (winner === 3) {
         alert('You found a pearl!');
         pearls++;
         shell3.classList.add('hidden');
         pearl3.classList.remove('hidden');
-        document.getElementById('pearlsSpan').textContent = empties;
+        document.getElementById('pearlsSpan').textContent = pearls;
         let total = pearls + empties;
         document.getElementById('totalSpan').textContent = total;
 
@@ -75,6 +88,17 @@ button3.addEventListener('click', () => {
         document.getElementById('totalSpan').textContent = total;
     }
 });
-  // get user input
-  // use user input to update state 
-  // update DOM to reflect the new state
+
+resetButton.addEventListener('click', () => {
+    document.getElementById('button1').classList.toggle('hidden');
+    document.getElementById('button2').classList.toggle('hidden');
+    document.getElementById('button3').classList.toggle('hidden');
+    document.getElementById('resetButton').classList.toggle('hidden');
+    shell1.classList.remove('hidden');
+    shell2.classList.remove('hidden');
+    shell3.classList.remove('hidden');
+    pearl1.classList.add('hidden');
+    pearl2.classList.add('hidden');
+    pearl3.classList.add('hidden');
+    
+});
