@@ -49,6 +49,24 @@ main {
     display: none;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#button1 {
+    margin-left: 100px;
+}
+
+#button2 {
+    margin-left: 175px;
+}
+
+#button3 {
+    margin-left: 175px;
+}
+
 section {
     background-color: var(--color5);
     max-width: 80%;
@@ -70,7 +88,6 @@ header {
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
-
 
 h2 {
     font-size: 1.8rem;
