@@ -14,7 +14,6 @@ const button3 = document.getElementById('button3');
 // let state
 let pearls = 0;
 let empties = 0;
-let total = 0;
 
 // set event listeners 
 button1.addEventListener('click', () => {
@@ -89,7 +88,7 @@ button3.addEventListener('click', () => {
     }
 });
 
-resetButton.addEventListener('click', () => {
+document.getElementById('resetButton').addEventListener('click', () => {
     document.getElementById('button1').classList.toggle('hidden');
     document.getElementById('button2').classList.toggle('hidden');
     document.getElementById('button3').classList.toggle('hidden');
