@@ -9,64 +9,50 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/home.css">
-    <title>Document</title>
+    <title>Shell Game</title>
 </head>
 
 <body>
     <header>
-        <div class="gutter-right logo">
-            <img src="./assets/big-logo.png" />
-        </div>
     </header>
-    <main>
-        <section class="main-section">
-            <img class="main-logo" src="./assets/alchemy-logo.png" />
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur
-                voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos
-                praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores
-                provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente
-                excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil
-                inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi
-                reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit
-                possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis
-                ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa
-                praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis
-                exercitationem?
-            </p>
-
+    <main>     
+        <section>
+            <h1>Choose the shell hiding the pearl.</h1>
+            <section class="shells">
+                <div class="shell">
+                    <img src="/assets/shell.png" id="shell1" style="width:256px;height:256px">
+                </div>
+                <div>
+                    <img class="hidden" id="pearl1" src="https://static.turbosquid.com/Preview/2018/01/10__14_56_36/SeaShellWithPearlvray3dmodel000.jpgF5438B5A-2B1E-4962-8C1B-4C0FA37F2897DefaultHQ.jpg" style="height:256px;width:256px;">
+                </div>                
+                <div class="shell">
+                    <img src="/assets/shell.png" id="shell2" style="width:256px;height:256px">
+                </div>
+                <div>
+                    <img class="hidden" id="pearl2"src="https://static.turbosquid.com/Preview/2018/01/10__14_56_36/SeaShellWithPearlvray3dmodel000.jpgF5438B5A-2B1E-4962-8C1B-4C0FA37F2897DefaultHQ.jpg" style="height:256px;width:256px;">
+                </div>                
+                <div class="shell">
+                    <img src="/assets/shell.png" id="shell3" style="width:256px;height:256px">
+                </div>
+                <div>
+                    <img class="hidden" id="pearl3" src="https://static.turbosquid.com/Preview/2018/01/10__14_56_36/SeaShellWithPearlvray3dmodel000.jpgF5438B5A-2B1E-4962-8C1B-4C0FA37F2897DefaultHQ.jpg" style="height:256px;width:256px;">
+                </div>
+            </section>
+            <section class="buttons">
+                <button id="button1">Guess Shell 1</button>
+                <button id="button2">Guess Shell 2</button>
+                <button id="button3">Guess Shell 3</button>
+                <button id="resetButton" class="hidden">Play again?</button>
+            </section>
+            <section class="shells">
+                    <p>Pearls: <span id="pearlsSpan">0</span></p>
+                    <p>Empties: <span id="emptiesSpan">0</span></p>                
+                    <p>Total: <span id="totalSpan">0</span></p>
+            </section>
         </section>
     </main>
     <footer>
-        <div class="copy gutter-right">&copy; 2021 Alchemy Code Lab</div>
     </footer>
-
     <script type="module" src="./app.js"></script>
 </body>
 
